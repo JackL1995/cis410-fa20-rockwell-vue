@@ -3,7 +3,12 @@
     <div class="container-fluid">
         <app-header></app-header>
         <h4>Work Order App</h4>
+
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-7">
         <router-view></router-view>
+          </div>
+        </div>
     </div>
   </div>
 </template>
