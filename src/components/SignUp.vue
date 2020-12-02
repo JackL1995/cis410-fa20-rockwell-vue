@@ -27,8 +27,8 @@ import axios from 'axios'
 export default {
     data(){
         return {
-            FirstName:'',
-            LastName:'',
+            firstName:'',
+            lastName:'',
             email:'',
             password:'',
             // phone:'',
@@ -40,11 +40,11 @@ export default {
         onSubmit(){
 
             const myFormData = {
-                firstName: this.FirstName,
-                lastName: this.LastName,
+                firstName: this.firstName,
+                lastName: this.lastName,
                 email: this.email,
                 password: this.password,
-                // phone:this.phone
+                phone:'9703290'
             }
             //console.log(myFormData);
 
