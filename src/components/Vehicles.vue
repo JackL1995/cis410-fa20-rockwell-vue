@@ -25,8 +25,8 @@
                     <td>{{thisVehicle.Miles}}</td>
                     <!-- <td>Number of {{thisVehicle.MakeName}}s Worked On</td> -->
                     <td>
-                        <router-link :to="`/vehicles/${thisVehicle.VehicleVIN}`">
-                            <button type="button" class="btn btn-primary">Number of {{thisVehicle.MakeName}}s Worked On</button>
+                        <router-link :to="`/vehicle/${thisVehicle.VehicleVIN}`">
+                            <button type="button" class="btn btn-primary">{{thisVehicle.MakeName}} Details</button>
                         </router-link>
                     </td>
                 </tr>

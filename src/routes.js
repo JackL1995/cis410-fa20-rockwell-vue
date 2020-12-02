@@ -18,8 +18,8 @@ const routes = [
     {path: '/', component: Home},
     {path: '/account', component: Account},
     {path: '/signin', component: Login},
-    {path: '/vehicles', component: Vehicles},
-    {path: '/vehicles/:pk', component: VehicleDetails,
+    {path: '/vehicle', component: Vehicles},
+    {path: '/vehicle/:pk', component: VehicleDetails,
         children: [
             {path: 'workorder', component: WorkCreate}
         ]},

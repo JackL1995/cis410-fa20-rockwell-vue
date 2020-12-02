@@ -14,7 +14,7 @@
     <ul class="navbar-nav ml-auto">
 
       <li class="nav-item">
-        <router-link class="nav-link" to="/vehicles">Vehicles</router-link>
+        <router-link class="nav-link" to="/vehicle">Vehicle</router-link>
       </li>
 
       <li class="nav-item">
