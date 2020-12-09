@@ -18,7 +18,7 @@ const routes = [
     {path: '/', component: Home},
     {path: '/account', component: Account, beforeEnter(to, from, next){
         if(store.state.token){next()}
-        else{next('/signin')}
+       else{next('/signin')}
     }},
     {path: '/signin', component: Login},
     {path: '/vehicle', component: Vehicles},
