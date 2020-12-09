@@ -19,7 +19,9 @@
         <router-link v-else :to="`/signin`">
             <button type="button" class="btn btn-outline-success">Login to create a work order</button>
         </router-link>
-        
+        <br/>
+        <br/>
+        <router-view></router-view>
     </div>
 </template>
 

@@ -9,7 +9,6 @@ import SignUp from './components/SignUp.vue';
 import Vehicles from './components/Vehicles.vue';
 import VehicleDetails from './components/VehicleDetails.vue';
 import WorkCreate from './components/WorkCreate.vue';
-import WorkOrders from './components/WorkOrders.vue';
 
 import store from './store.js';
 
