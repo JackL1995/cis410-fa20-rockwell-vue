@@ -18,7 +18,7 @@
 
             <p v-if="credentialsError" class="form-text text-danger">Something's not right. (Invalid credentials)</p>
 
-            <p v-if="loginError" class="form-text text-danger">Something's not right. (Try again later)</p>
+            <p v-if="loginError" class="form-text text-danger">Something's not right. (Login error)</p>
         </form>
     </div>
 </template>
@@ -45,7 +45,7 @@ export default {
 
             axios.post("/customer/login", myFormData)
             .then(myResponse=>{
-                console.log("here is my response", myResponse)
+                //console.log("here is my response", myResponse)
 
                 this.$store.commit("storeTokenInApp", myResponse.data.token);
 
@@ -67,7 +67,7 @@ export default {
             .catch((myError)=>{
                 console.log("my error", myError.response.data)
 
-                if(myError.response.data == 'invalid user credentials, yo'){
+                if(myError.response.data == 'invalid user credentials'){
                     this.credentialsError = true
                 } else {
                     this.loginError = true
